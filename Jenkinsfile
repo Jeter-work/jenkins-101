@@ -14,8 +14,8 @@ pipeline {
                 sh '''
                 date
                 cd myapp
-                python3 -m venv build_env
-                source build_env/bin/activate
+                // python3 -m venv build_env
+                // source build_env/bin/activate
                 /home/jenkins/workspace/my_first_build_pipeline/myapp/build_env/bin/python3 -m pip install --upgrade pip
                 pip install -r requirements.txt
                 '''
@@ -26,7 +26,7 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 cd myapp
-                source build_env/bin/activate
+                // source build_env/bin/activate
                 python3 hello.py
                 python3 hello.py --name=Scott
                 '''
