@@ -26,6 +26,7 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 cd myapp
+                source build_env/bin/activate
                 python3 hello.py
                 python3 hello.py --name=Scott
                 '''
