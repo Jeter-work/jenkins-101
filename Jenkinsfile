@@ -17,7 +17,7 @@ pipeline {
                 python3 -m venv build_env
                 source build_env/bin/activate
                 /home/jenkins/workspace/my_first_build_pipeline/myapp/build_env/bin/python3 -m pip install --upgrade pip
-                pip install requirements.txt
+                pip install -r requirements.txt
                 '''
             }
         }
