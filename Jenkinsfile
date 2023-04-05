@@ -14,7 +14,7 @@ pipeline {
                 sh '''
                 date
                 cd myapp
-                pip install requirements.txt
+                sudo pip install requirements.txt
                 '''
             }
         }
