@@ -14,8 +14,8 @@ pipeline {
                 sh '''
                 date
                 cd myapp
-                python3 --version
-                python3 -m ensurepip --default-pip
+                python3 -m venv build_env
+                source build_env/bin/activate
                 pip install requirements.txt
                 '''
             }
