@@ -14,7 +14,6 @@ pipeline {
                 sh '''
                 date
                 cd myapp
-                /home/jenkins/workspace/my_first_build_pipeline/myapp/build_env/bin/python3 -m pip install --upgrade pip
                 pip install -r requirements.txt
                 '''
             }
