@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
+                date
                 cd myapp
                 pip install requirements.txt
                 '''
