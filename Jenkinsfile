@@ -14,7 +14,9 @@ pipeline {
                 sh '''
                 date
                 cd myapp
-                sudo pip install requirements.txt
+                python3 --version
+                python3 -m ensurepip --default-pip
+                pip install requirements.txt
                 '''
             }
         }
